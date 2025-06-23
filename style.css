@@ -1,0 +1,158 @@
+/* ------------------------------
+   Global Base Styles
+------------------------------ */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5faff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ------------------------------
+   Header
+------------------------------ */
+header {
+  background: linear-gradient(120deg, #006d77, #83c5be);
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* ------------------------------
+   Navigation Bar
+------------------------------ */
+nav {
+  background: #005f73;
+  padding: 10px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+nav a:hover {
+  color: #ffdd00;
+}
+
+/* ------------------------------
+   Section Layout
+------------------------------ */
+section {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+section ul {
+  padding-left: 20px;
+}
+
+/* ------------------------------
+   Product Cards
+------------------------------ */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease-in-out;
+  width: 250px;
+  overflow: hidden;
+  text-align: center;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.card h3,
+.card p {
+  padding: 10px;
+}
+
+/* ------------------------------
+   Order Form Button
+------------------------------ */
+.order-button {
+  background-color: #0077b6;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease;
+}
+.order-button:hover {
+  background-color: #00b4d8;
+}
+
+/* ------------------------------
+   WhatsApp Floating Button
+------------------------------ */
+.whatsapp-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* ------------------------------
+   Footer
+------------------------------ */
+footer {
+  background: #03045e;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* ------------------------------
+   Scroll Animation (Fade In)
+------------------------------ */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ------------------------------
+   Responsive Layout
+------------------------------ */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
