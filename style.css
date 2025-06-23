@@ -156,3 +156,13 @@ footer {
     align-items: center;
   }
 }
+
+/* ------------------------------
+   Payment Section QR Styling
+------------------------------ */
+#payment img {
+  max-width: 200px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  margin-top: 15px;
+}
