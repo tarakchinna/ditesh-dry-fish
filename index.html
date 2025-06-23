@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ditesh Dry Fish</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <h1>Ditesh</h1>
+    <p>Your Trusted Source for Dry Fish & Prawns</p>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#order">Order</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="fade-in">
+    <h2>About Us</h2>
+    <p>Founded by <strong>Oleti Nagababu</strong>, we deliver clean and quality dry fish and prawns all over India. Affordable prices. Bulk orders welcome!</p>
+  </section>
+
+  <section id="products" class="fade-in">
+    <h2>Our Products</h2>
+    <ul>
+      <li>🐟 Dry Fish – ₹200/kg</li>
+      <li>🍤 Dry Prawns – ₹350/kg</li>
+    </ul>
+    <p>🚚 Fast Nationwide Delivery | 💰 Online Payments Accepted</p>
+
+    <div class="cards">
+      <div class="card">
+        <img src="dryfish.jpeg" alt="Dry Fish">
+        <h3>Dry Fish</h3>
+        <p>₹200/kg – Local Sun-Dried Variety</p>
+      </div>
+
+      <div class="card">
+        <img src="prawns.jpeg" alt="Dry Prawns">
+        <h3>Dry Prawns</h3>
+        <p>₹350/kg – Coastal Fresh Prawns</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ✅ Order Button Section -->
+  <section id="order" class="fade-in">
+    <h2 style="text-align:center;">Place Your Order</h2>
+    <p style="text-align:center;">Click below to open our order form in a new tab:</p>
+    <div style="text-align:center; margin: 30px;">
+      <a class="order-button" href="https://forms.gle/CcBfCQYn8Ct4iE3f6" target="_blank">
+        📝 Fill Order Form
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="fade-in">
+    <h2>Contact Us</h2>
+    <p>📱 <a href="tel:+919550330440">+91 95503 30440</a></p>
+    <p>📧 <a href="mailto:oletinababu@gmail.com">oletinababu@gmail.com</a></p>
+    <p>📍 [Your Address, PIN Code]</p>
+  </section>
+
+  <a class="whatsapp-button" href="https://wa.me/919550330440?text=Hello%20Ditesh%20Dry%20Fish%2C%20I%20want%20to%20order%20dry%20fish%20or%20prawns" target="_blank">
+    💬 Chat on WhatsApp
+  </a>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Ditesh Dry Fish. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Auto-update year
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
